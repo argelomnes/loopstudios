@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   [Solution](https://www.frontendmentor.io/solutions/loopstudios-landing-page-using-tailwind-css-jit-I14V5a5yH)
+-   [Live Site](https://loopstudios-ao.netlify.app/)
 
 
 
