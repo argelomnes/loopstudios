@@ -1303,3 +1303,9 @@ nav a:hover,
 		padding-left: 6rem;
 	}
 }
+@media (min-width: 365px) {
+
+	.xs\:hidden {
+		display: none;
+	}
+}
