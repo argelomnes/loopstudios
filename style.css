@@ -571,10 +571,15 @@ video {
     }
         }
 .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             line-height: 2.4rem;
             max-width: var(--max-dimension);
         }
+@media (min-width: 365px) {
+.hero h1 {
+                font-size: 2.5rem
+        }
+            }
 @media (min-width: 640px) {
 .hero h1 {
                 font-size: 4.5rem;
@@ -654,9 +659,6 @@ nav a:hover,
 }
 .right-0 {
 	right: 0px;
-}
-.left-\[calc\(6vw-0\.5rem\)\] {
-	left: calc(6vw - 0.5rem);
 }
 .z-40 {
 	z-index: 40;
@@ -863,9 +865,6 @@ nav a:hover,
 }
 .pb-2 {
 	padding-bottom: 0.5rem;
-}
-.text-right {
-	text-align: right;
 }
 .text-left {
 	text-align: left;
@@ -1098,6 +1097,10 @@ nav a:hover,
 		margin-right: -3px;
 	}
 
+	.lg\:ml-0 {
+		margin-left: 0px;
+	}
+
 	.lg\:mb-\[8\.5rem\] {
 		margin-bottom: 8.5rem;
 	}
@@ -1124,10 +1127,6 @@ nav a:hover,
 
 	.lg\:ml-10 {
 		margin-left: 2.5rem;
-	}
-
-	.lg\:ml-0 {
-		margin-left: 0px;
 	}
 
 	.lg\:flex {
