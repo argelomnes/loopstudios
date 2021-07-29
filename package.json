@@ -4,7 +4,8 @@
     "description": "![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)",
     "main": "index.js",
     "scripts": {
-        "dev": "concurrently \"postcss tailwind.css -o style.css -w\" \"vite\""
+        "dev": "vite",
+        "build": "vite build"
     },
     "repository": {
         "type": "git",
@@ -18,12 +19,10 @@
     },
     "homepage": "https://github.com/argelomnes/loopstudios-landing-page#readme",
     "devDependencies": {
-        "autoprefixer": "^10.2.5",
-        "concurrently": "^6.0.2",
-        "postcss": "^8.2.10",
-        "postcss-cli": "^8.3.1",
-        "postcss-nested": "^5.0.5",
-        "tailwindcss": "^2.1.1",
-        "vite": "^2.1.5"
+        "autoprefixer": "^10.3.1",
+        "postcss": "^8.3.6",
+        "postcss-nested": "^5.0.6",
+        "tailwindcss": "^2.2.7",
+        "vite": "^2.4.4"
     }
 }
