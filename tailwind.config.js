@@ -20,7 +20,6 @@ module.exports = {
                 base: ['0.9375rem', { lineHeight: '1.65' }],
             },
             colors: {
-                teal: colors.teal,
                 gray: colors.trueGray,
                 'dark-gray': 'hsl(0, 0%, 55%)',
                 'very-dark-gray': 'hsl(0, 0%, 41%)',
