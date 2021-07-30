@@ -59,7 +59,7 @@ You can do inline calculations using Tailwind CSS' JIT. It will then output a cl
 }
 ```
 
-There's also a proper way to use custom fonts in Tailwind. The advantage is you'll be using the cross-browser font stack that it provides.
+There's also a proper way to use custom fonts in Tailwind. The advantage is you'll have the cross-browser font stack that it provides as fallback.
 
 ```javascript
 // tailwind.config.js
