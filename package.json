@@ -4,9 +4,8 @@
     "description": "![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)",
     "main": "index.js",
     "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "serve": "vite preview"
+        "start": "vite",
+        "build": "vite build"
     },
     "repository": {
         "type": "git",

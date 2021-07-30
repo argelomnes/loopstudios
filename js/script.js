@@ -1,17 +1,20 @@
-function openNav() {
-    // slides in overlay together w/ nav when hamburger is tapped
-    document.getElementById("overlay").style.width = "100%";
-    document.getElementById("close-btn").style.display = "block";
+const openButton = document.getElementById('open-button');
+const closeButton = document.getElementById('close-button');
+const overlay = document.getElementById('overlay');
+const body = document.getElementById('body');
 
-    // hides hamburger before it gets pushed back by overlay
-    document.getElementById("hamburger").style.display = "none";
-}
+// slides in mobile menu
+openButton.addEventListener('click', () => {
+    overlay.classList.toggle('-translate-x-full');
+    openButton.classList.toggle('hidden');
+    closeButton.classList.toggle('hidden');
+    body.classList.toggle('overflow-hidden');
+});
 
-function closeNav() {
-    // slides out when 'x' is tapped
-    document.getElementById("overlay").style.width = "0%";
-    document.getElementById("close-btn").style.display = "none";
-
-    //unhide
-    document.getElementById("hamburger").style.display = "block";
-}
+// slides out mobile menu
+closeButton.addEventListener('click', () => {
+    overlay.classList.toggle('-translate-x-full');
+    openButton.classList.toggle('hidden');
+    closeButton.classList.toggle('hidden');
+    body.classList.toggle('overflow-hidden');
+});

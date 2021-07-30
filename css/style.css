@@ -32,10 +32,6 @@
         }
     }
 
-    .primary-nav {
-        top: 47.9vw;
-    }
-
     /* ---- underline hover animation for header and footer links ---- */
     nav a,
     .social-icon,

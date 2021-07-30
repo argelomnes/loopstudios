@@ -2,7 +2,7 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
     mode: "jit",
-    purge: ["./index.html"],
+    purge: ["./index.html", "./js/script.js"],
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
@@ -23,13 +23,6 @@ module.exports = {
                 gray: colors.trueGray,
                 "dark-gray": "hsl(0, 0%, 55%)",
                 "very-dark-gray": "hsl(0, 0%, 41%)",
-            },
-            spacing: {
-                // 5.5: "1.375rem",
-                // 32.25: "8.0625rem",
-                // 34: "8.5rem",
-                // 40.5: "10.125rem",
-                // note: decided to do this inline instead since these were only used once
             },
         },
     },
