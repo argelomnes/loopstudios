@@ -1,28 +1,26 @@
 {
-    "name": "loopstudios-landing-page",
-    "version": "1.0.0",
-    "description": "![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)",
-    "main": "index.js",
-    "scripts": {
-        "start": "vite",
-        "build": "vite build"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/argelomnes/loopstudios-landing-page.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/argelomnes/loopstudios-landing-page/issues"
-    },
-    "homepage": "https://github.com/argelomnes/loopstudios-landing-page#readme",
-    "devDependencies": {
-        "autoprefixer": "^10.3.1",
-        "postcss": "^8.3.6",
-        "postcss-nested": "^5.0.6",
-        "tailwindcss": "^2.2.7",
-        "vite": "^2.4.4"
-    }
+  "name": "loopstudios-landing-page",
+  "version": "1.0.0",
+  "description": "![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss --postcss -i css/tailwind.css -o css/style.css --watch",
+    "build": "npx tailwindcss --postcss -i css/tailwind.css -o css/style.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/argelomnes/loopstudios-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/argelomnes/loopstudios-landing-page/issues"
+  },
+  "homepage": "https://github.com/argelomnes/loopstudios-landing-page#readme",
+  "devDependencies": {
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.4"
+  }
 }

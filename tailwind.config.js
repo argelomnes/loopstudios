@@ -1,33 +1,36 @@
-const colors = require('tailwindcss/colors');
-const defaultTheme = require('tailwindcss/defaultTheme');
+/** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-    mode: 'jit',
-    purge: ['./index.html', './js/script.js'],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-        extend: {
-            screens: {
-                xs: '365px',
-                lg: '960px',
-                xl: '1160px',
-            },
-            fontFamily: {
-                headline: ['"Josefin Sans"', ...defaultTheme.fontFamily.sans],
-                sans: ['Alata', ...defaultTheme.fontFamily.sans],
-            },
-            fontSize: {
-                base: ['0.9375rem', { lineHeight: '1.65' }],
-            },
-            colors: {
-                gray: colors.trueGray,
-                'dark-gray': 'hsl(0, 0%, 55%)',
-                'very-dark-gray': 'hsl(0, 0%, 41%)',
-            },
-        },
+  content: ["./*.html", "./js/*.js"],
+  theme: {
+    screens: {
+      xs: "365px",
+      lg: "960px",
+      xl: "1160px",
+      ...defaultTheme.screens,
     },
-    variants: {
-        extend: {},
+    extend: {
+      colors: {
+        "dark-gray": "hsl(0, 0%, 55%)",
+        "very-dark-gray": "hsl(0, 0%, 41%)",
+      },
+      fontFamily: {
+        headline: ['"Josefin Sans"', ...defaultTheme.fontFamily.sans],
+        sans: ["Alata", ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        base: ["0.9375rem", "1.65"],
+      },
+      spacing: {
+        5.5: "1.375rem",
+        7.5: "1.875rem",
+        32.25: "8.0625rem",
+        34: "8.5rem",
+        40.5: "10.125rem",
+      },
     },
-    plugins: [],
+  },
+  plugins: [],
 };
